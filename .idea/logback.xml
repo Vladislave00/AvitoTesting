@@ -1,0 +1,3 @@
+<pattern>
+    %d{yyyy-MM-dd HH:mm:ss} [%thread] %cyan(%level) %logger{36} - %msg%n
+</pattern>
