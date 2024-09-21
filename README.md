@@ -3,18 +3,15 @@
 1. **Склонируйте репозиторий**  
    Выполните команду в терминале для клонирования проекта тестового задания:
    ```bash
-   git clone https://github.com/Herzenswearme/AvitoTech_QA-trainee.git
+   git clone https://github.com/Vladislave00/AvitoTesting
    ```
    Или скачайте ZIP архив по [ссылке](https://disk.yandex.ru/d/Gaho0WICRY_V4A) и распакуйте его.
 
-2. **Откройте проект в IDE**  
-   Откройте проект в любой IDE с поддержкой Maven (рекомендуется использовать IntelliJ IDEA).
+2. Откройте проект в любой IDE с поддержкой Maven (рекомендуется использовать IntelliJ IDEA).
 
-3. **Подгрузите зависимости Maven**  
-   Чтобы все зависимости Maven подгрузились, нажмите **Reload project**.
+3. Чтобы все зависимости Maven подгрузились, нажмите **Reload project**.
 
-4. **Убедитесь в наличии Chrome и ChromeDriver**  
-   Убедитесь, что у вас установлен браузер Chrome и соответствующий ему ChromeDriver.
+4. Убедитесь, что у вас установлен браузер Chrome и соответствующий ему ChromeDriver.
 
 5. **Запустите тесты**  
    Запустите тесты в терминале Maven с помощью команды:
