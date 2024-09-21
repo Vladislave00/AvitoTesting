@@ -8,12 +8,14 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
 public class GamesPage {
     private static WebDriver driver;
     private static WebDriverWait wait;
     private List<WebElement> list;
+    private List<WebElement> list1;
 
     public GamesPage(WebDriver driver) {
         GamesPage.driver = driver;
@@ -42,6 +44,9 @@ public class GamesPage {
         TimeUnit.SECONDS.sleep(1);
         list = driver.findElement(By.className("ant-list-items")).findElements(By.className("ant-list-item"));
     }
+    public void copyList(){
+        list1 = List.copyOf(list);
+    }
     public boolean checkGenre(String text, int id) {
         return getGenre(id).toLowerCase().contains(text.toLowerCase());
     }
@@ -57,5 +62,51 @@ public class GamesPage {
     }
     public String getError() {
         return driver.findElement(By.xpath("//*[@id=\"error-page\"]/div/div/div[2]/div[2]")).getText();
+    }
+
+    public void clickGame() {
+        WebElement element = wait.until(driver -> driver.findElement(By.className("ant-card-body")));
+        element.click();
+    }
+
+    public void clickBackToMain() {
+        WebElement element = wait.until(driver -> driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[3]/div/div" +
+                "/div[5]/div")).findElement(By.tagName("button")));
+        element.click();
+    }
+
+    public void clickPage(int num) throws InterruptedException {
+        TimeUnit.SECONDS.sleep(1);
+        WebElement element =
+                wait.until(driver -> driver.findElement(By.cssSelector("li[title=\""+num+"\"]")).findElement(By.tagName("a")));
+        element.click();
+    }
+    public void clickBack() throws InterruptedException {
+        TimeUnit.SECONDS.sleep(1);
+        WebElement element =
+                wait.until(driver -> driver.findElement(By.cssSelector("li[title=\"Previous Page\"]")).findElement(By.tagName("button")));
+        element.click();
+    }
+    public void clickForward() throws InterruptedException {
+        TimeUnit.SECONDS.sleep(1);
+        WebElement element =
+                wait.until(driver -> driver.findElement(By.cssSelector("li[title=\"Next Page\"]")).findElement(By.tagName("button")));
+        element.click();
+    }
+    public boolean compareLists() {
+        if (list.size() != list1.size()){
+            return false;
+        }
+        for (int i = 0; i < list.size(); i++) {
+            if (!Objects.equals(list.get(i).findElement(By.tagName("h1")).getText(), list1.get(i).findElement(By.tagName("h1")).getText())){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public boolean isPageActive(String pageNumber) {
+        WebElement element = wait.until(driver -> driver.findElement(By.cssSelector("li[title=\""+pageNumber+"\"]")));
+        return element.getAttribute("class").contains("ant-pagination-item-active");
     }
 }

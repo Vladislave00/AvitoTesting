@@ -80,7 +80,7 @@ public class FilterTest {
             errors.add("Ошибка во время выполнения теста: " + t.getMessage());
         } finally {
             if (!errors.isEmpty()) {
-                throw new AssertionError("Тест не пройден. Ошибки: " + String.join(", ", errors));
+                throw new AssertionError("Тест провален. Ошибки: " + String.join(", ", errors));
             }
             else {
                 logger.info("Тест пройден успешно");

@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="232b7883-04a5-42f0-a3f6-15b9690e3ed4" name="Changes" comment="Написан первый тест и баг репорт">
-      <change afterPath="$PROJECT_DIR$/images/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/img_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/img_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/img_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/img_4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="232b7883-04a5-42f0-a3f6-15b9690e3ed4" name="Changes" comment="добавлены скрины в 1 задании и немного описания для 2-го">
+      <change afterPath="$PROJECT_DIR$/images/img_7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/BackToMainTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/PaginationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TESTCASES.md" beforeDir="false" afterPath="$PROJECT_DIR$/TESTCASES.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/GamesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/GamesPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/FilterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/FilterTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,9 +55,9 @@
 }]]></component>
   <component name="RunAnythingCache">
     <option name="myCommands">
-      <command value="mvn clean test" />
       <command value="mvn verify" />
       <command value="mvn test" />
+      <command value="mvn clean test" />
     </option>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -70,7 +70,7 @@
       <updated>1726770083107</updated>
       <workItem from="1726770084447" duration="35000" />
       <workItem from="1726770168868" duration="32541000" />
-      <workItem from="1726854274093" duration="4609000" />
+      <workItem from="1726854274093" duration="16217000" />
     </task>
     <task id="LOCAL-00001" summary="Создан проект и загружены необходимые зависимости в pom.xml">
       <created>1726770887671</created>
@@ -86,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1726855925790</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="добавлены скрины в 1 задании и немного описания для 2-го">
+      <created>1726859326869</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1726859326869</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,6 +113,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Создан проект и загружены необходимые зависимости в pom.xml" />
     <MESSAGE value="Написан первый тест и баг репорт" />
-    <option name="LAST_COMMIT_MESSAGE" value="Написан первый тест и баг репорт" />
+    <MESSAGE value="добавлены скрины в 1 задании и немного описания для 2-го" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавлены скрины в 1 задании и немного описания для 2-го" />
   </component>
 </project>
