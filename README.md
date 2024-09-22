@@ -5,7 +5,7 @@
    ```bash
    git clone https://github.com/Vladislave00/AvitoTesting
    ```
-   Или скачайте ZIP архив по [ссылке](https://disk.yandex.ru/d/Gaho0WICRY_V4A) и распакуйте его.
+   Или скачайте ZIP архив по [ссылке](https://github.com/Vladislave00/AvitoTesting/archive/refs/heads/master.zip) и распакуйте его.
 
 2. Откройте проект в любой IDE с поддержкой Maven (рекомендуется использовать IntelliJ IDEA).
 
